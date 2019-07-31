@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Selig Coding Challange for Rippleshot
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7eccb5e0-d6cf-44a9-8cea-a85d647a03e6/deploy-status)](https://app.netlify.com/sites/rippleshot/deploys)
 
 ## Available Scripts
 
