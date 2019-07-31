@@ -43,3 +43,16 @@ Temporary Items
 .history
 
 # End of https://www.gitignore.io/api/macos,visualstudiocode
+
+### Other Files ###
+node_modules
+*.log
+coverage
+.idea
+.tern-project
+dist
+npm-debug.log
+package-lock.json
+yarn.lock
+.vscode/settings.json
+.history
