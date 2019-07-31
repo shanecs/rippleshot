@@ -93,6 +93,6 @@ export default (endpoint) => {
           case '/data/fraud': resolve(fraudLoss); break;
           default: reject(Error(404));
         }
-      }, 1000);
+      }, 2500);
     });
 };

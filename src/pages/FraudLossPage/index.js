@@ -3,7 +3,6 @@ import get from 'lodash/get';
 
 import api from '../../mocks/api';
 import Line from '../../components/Visualizations/Line';
-import ControlPanel from '../../components/ControlPanel';
 
 export default class FraudLoss extends Component {
   constructor(props) {
@@ -70,22 +69,16 @@ export default class FraudLoss extends Component {
     return {data, markers};
   }
 
-  onToggleControlPanel = () => {
-    const { controlPanel } = this.state;
-    this.setState({ controlPanel: !controlPanel });
-  }
   render() {
-    const { controlPanel, data, markers, loading } = this.state;
+    const { data, markers, loading } = this.state;
 
     return (
       <div style={{height: 500}}>
-        <ControlPanel
-          open={controlPanel}
-        />
         <Line
           data={data}
           markers={markers}
           xLegend='Month'
+          loading={loading}
           // Disable time scale because of bug with visualization library with
           // this version of ReactJS, should hopefully be fixed soon
           // xScale={{ type: 'time', format: '%Y-%m', precision: 'month' }}
